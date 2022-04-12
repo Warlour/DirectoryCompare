@@ -3,3 +3,4 @@ dircompare/1path
 dircompare/2path
 dircompare/*.exe
 dircompare/*.bat
+dirchecksum/*.exe
