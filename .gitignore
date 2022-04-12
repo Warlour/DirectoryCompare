@@ -1,5 +1,5 @@
 .vscode
-src/1path
-src/2path
-src/*.exe
-src/*.bat
+dircompare/1path
+dircompare/2path
+dircompare/*.exe
+dircompare/*.bat
