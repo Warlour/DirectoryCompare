@@ -11,7 +11,6 @@ std::string path2;
 std::string keyword;
 // std::ostream& operator <<(std::ostream& os, const std::vector<std::string>& v);
 
-// Udvidelse til funktionskald af iterator
 void dir_iterator(std::string path, std::vector<std::string>& v);
 
 
