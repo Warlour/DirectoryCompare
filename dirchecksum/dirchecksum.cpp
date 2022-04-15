@@ -3,14 +3,14 @@
 #include <iomanip>
 #include <sstream>
 #include <string>
-#include "include/openssl/sha.h"
+#include "openssl/sha.h"
 
 std::vector<std::string> files1;
 std::string path1;
 
 std::ostream& operator <<(std::ostream& os, const std::vector<std::string>& v);
 
-string sha256(const std::string str);
+std::string sha256(const std::string str);
 void dir_iterator(std::string path, std::vector<std::string>& v);
 
 int main(int argc, char const *argv[]){
@@ -36,12 +36,12 @@ int main(int argc, char const *argv[]){
         exit(0);
     }
 
-    sha256()
+    std::cout << sha256("test") << std::endl;
     
     return 0;
 }
 
-string sha256(const std::string str){
+std::string sha256(const std::string str){
     unsigned char hash[SHA256_DIGEST_LENGTH];
     SHA256_CTX sha256;
     SHA256_Init(&sha256);
