@@ -3,7 +3,6 @@
 #include <iomanip>
 #include <sstream>
 #include <string>
-#include "openssl/sha.h"
 
 std::vector<std::string> files1;
 std::string path1;
