@@ -1,0 +1,3 @@
+C:/Users/mathi/Documents/GitHub/DirectoryCompare/build/CMakeFiles/DirChecksum.dir
+C:/Users/mathi/Documents/GitHub/DirectoryCompare/build/CMakeFiles/edit_cache.dir
+C:/Users/mathi/Documents/GitHub/DirectoryCompare/build/CMakeFiles/rebuild_cache.dir

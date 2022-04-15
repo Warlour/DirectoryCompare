@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/mathi/Documents/GitHub/DirectoryCompare/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/DirChecksum.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -o CMakeFiles\\DirChecksum.dir\\dirchecksum\\dirchecksum.cpp.obj -c C:\\Users\\mathi\\Documents\\GitHub\\DirectoryCompare\\dirchecksum\\dirchecksum.cpp",
+  "file": "C:/Users/mathi/Documents/GitHub/DirectoryCompare/dirchecksum/dirchecksum.cpp"
+},
+{
+  "directory": "C:/Users/mathi/Documents/GitHub/DirectoryCompare/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/DirChecksum.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -o CMakeFiles\\DirChecksum.dir\\dirchecksum\\shaf.cpp.obj -c C:\\Users\\mathi\\Documents\\GitHub\\DirectoryCompare\\dirchecksum\\shaf.cpp",
+  "file": "C:/Users/mathi/Documents/GitHub/DirectoryCompare/dirchecksum/shaf.cpp"
+}
+]

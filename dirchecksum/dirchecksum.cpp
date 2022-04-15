@@ -3,13 +3,16 @@
 #include <iomanip>
 #include <sstream>
 #include <string>
+#include <vector>
+
+#include <openssl/sha.h>
+#include <shaf.hpp>
 
 std::vector<std::string> files1;
 std::string path1;
 
 std::ostream& operator <<(std::ostream& os, const std::vector<std::string>& v);
 
-std::string sha256(const std::string str);
 void dir_iterator(std::string path, std::vector<std::string>& v);
 
 int main(int argc, char const *argv[]){
@@ -35,23 +38,12 @@ int main(int argc, char const *argv[]){
         exit(0);
     }
 
-    std::cout << sha256("test") << std::endl;
+    static unsigned char buffer[65];
+    sha256("string", buffer);
+
+    std::cout << buffer << std::endl;
     
     return 0;
-}
-
-std::string sha256(const std::string str){
-    unsigned char hash[SHA256_DIGEST_LENGTH];
-    SHA256_CTX sha256;
-    SHA256_Init(&sha256);
-    SHA256_Update(&sha256, str.c_str(), str.size());
-    SHA256_Final(hash, &sha256);
-    std::stringstream ss;
-    for(int i = 0; i < SHA256_DIGEST_LENGTH; i++)
-    {
-        ss << std::hex << std::setw(2) << std::setfill('0') << (int)hash[i];
-    }
-    return ss.str();
 }
 
 std::ostream& operator <<(std::ostream& os, const std::vector<std::string>& v){
